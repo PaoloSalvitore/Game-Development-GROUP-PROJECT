@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2021.3/staging' branch; Version is '2021.3.8f1 (b30333d56e81) revision 11731763'; Using compiler version '192829333'; Build Type 'Release'
-OS: 'Windows 10  (10.0.19042) 64bit Enterprise' Language: 'en' Physical Memory: 32603 MB
+OS: 'Windows 10  (10.0.19044) 64bit Core' Language: 'en' Physical Memory: 6091 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
@@ -11,13 +11,13 @@ C:\Program Files\Unity\Hub\Editor\2021.3.8f1\Editor\Unity.exe
 -name
 AssetImportWorker0
 -projectPath
-E:/Unity/Unity Projects/Game Development
+C:/GitHub/Game-Development-GROUP-PROJECT
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-64366
-Successfully changed project path to: E:/Unity/Unity Projects/Game Development
-E:/Unity/Unity Projects/Game Development
+60546
+Successfully changed project path to: C:/GitHub/Game-Development-GROUP-PROJECT
+C:/GitHub/Game-Development-GROUP-PROJECT
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -47,208 +47,114 @@ E:/Unity/Unity Projects/Game Development
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 179.32 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 370.97 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.8f1 (b30333d56e81)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path E:/Unity/Unity Projects/Game Development/Assets
+[Subsystems] Discovering subsystems at path C:/GitHub/Game-Development-GROUP-PROJECT/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA Quadro P2000 (ID=0x1c30)
-    Vendor:   NVIDIA
-    VRAM:     5032 MB
-    Driver:   30.0.14.7141
+    Renderer: AMD Radeon(TM) Vega 8 Graphics (ID=0x15d8)
+    Vendor:   ATI
+    VRAM:     3045 MB
+    Driver:   30.0.13022.3
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56100
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56448
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.257587 seconds.
+Registered in 0.026549 seconds.
 Native extension for WindowsStandalone target not found
+[usbmuxd] Start listen thread
+[usbmuxd] Listen thread started
+[usbmuxd] Send listen message
+Native extension for iOS target not found
 Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 79.98 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 208.97 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  4.697 seconds
+- Completed reload, in  1.846 seconds
 Domain Reload Profiling:
-	ReloadAssembly (4697ms)
-		BeginReloadAssembly (3105ms)
+	ReloadAssembly (1848ms)
+		BeginReloadAssembly (267ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (1040ms)
-			LoadAssemblies (3102ms)
+			CreateAndSetChildDomain (2ms)
+		EndReloadAssembly (1282ms)
+			LoadAssemblies (264ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (671ms)
+			SetupTypeCache (325ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (28ms)
-			SetupLoadedEditorAssemblies (292ms)
+			RebuildScriptCaches (67ms)
+			SetupLoadedEditorAssemblies (756ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (69ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (80ms)
-				BeforeProcessingInitializeOnLoad (2ms)
-				ProcessInitializeOnLoadAttributes (94ms)
-				ProcessInitializeOnLoadMethodAttributes (46ms)
+				InitializePlatformSupportModulesInManaged (150ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (209ms)
+				BeforeProcessingInitializeOnLoad (3ms)
+				ProcessInitializeOnLoadAttributes (281ms)
+				ProcessInitializeOnLoadMethodAttributes (112ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.006162 seconds.
-Android Extension - Scanning For ADB Devices 5181 ms
+Registered in 0.032339 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image E:\Unity\Unity Projects\Game Development\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image E:\Unity\Unity Projects\Game Development\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image C:\GitHub\Game-Development-GROUP-PROJECT\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\GitHub\Game-Development-GROUP-PROJECT\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
 Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 5.36 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 3.34 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.077 seconds
+- Completed reload, in  4.668 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1078ms)
-		BeginReloadAssembly (109ms)
+	ReloadAssembly (4671ms)
+		BeginReloadAssembly (882ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (7ms)
+			DisableScriptedObjects (18ms)
 			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (23ms)
-		EndReloadAssembly (843ms)
-			LoadAssemblies (78ms)
+			ReleaseScriptingObjects (7ms)
+			CreateAndSetChildDomain (486ms)
+		EndReloadAssembly (3375ms)
+			LoadAssemblies (413ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (282ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (45ms)
-			SetupLoadedEditorAssemblies (406ms)
+			SetupTypeCache (960ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (224ms)
+			SetupLoadedEditorAssemblies (1574ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (13ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (5ms)
-				BeforeProcessingInitializeOnLoad (82ms)
-				ProcessInitializeOnLoadAttributes (267ms)
-				ProcessInitializeOnLoadMethodAttributes (29ms)
-				AfterProcessingInitializeOnLoad (9ms)
-				EditorAssembliesLoaded (0ms)
+				InitializePlatformSupportModulesInManaged (100ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (4ms)
+				BeforeProcessingInitializeOnLoad (350ms)
+				ProcessInitializeOnLoadAttributes (981ms)
+				ProcessInitializeOnLoadMethodAttributes (106ms)
+				AfterProcessingInitializeOnLoad (32ms)
+				EditorAssembliesLoaded (1ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
+			AwakeInstancesAfterBackupRestoration (29ms)
 Platform modules already initialized, skipping
-Script is not up to date after domain reload: guid(bedfc9d5ebff70f4896001f60a9b2790) path("Packages/com.unity.probuilder/External/Poly2Tri/Triangulation/TriangulationUtil.cs") state(2)
-Script is not up to date after domain reload: guid(2fa4bbd1a7ccee24783998770d56522e) path("Packages/com.unity.probuilder/AssetIdRemapUtility/Editor/AssetIdRemapEditor.cs") state(2)
-Script is not up to date after domain reload: guid(af7cbb59029d2420c960fa64da335888) path("Packages/com.unity.probuilder/Runtime/Core/SimpleTuple.cs") state(2)
-Script is not up to date after domain reload: guid(7fd9f5ac1b5cea54386d6497a518c29f) path("Packages/com.unity.probuilder/Editor/EditorCore/TextureTool.cs") state(2)
-Script is not up to date after domain reload: guid(5fb3641deade84f238d59ad03971b64c) path("Packages/com.unity.probuilder/Editor/MenuActions/Geometry/OffsetElements.cs") state(2)
-Script is not up to date after domain reload: guid(9f685c26016f847298dc0af81e9322c3) path("Packages/com.unity.probuilder/Runtime/Shapes/Stairs.cs") state(2)
-Script is not up to date after domain reload: guid(eff25082b866e6d468d04fc8a3f22e71) path("Packages/com.unity.probuilder/Editor/EditorCore/MenuActionStyles.cs") state(2)
-Script is not up to date after domain reload: guid(5f3c839e57094cf6b2e99af5515b2ca0) path("Packages/com.unity.probuilder/Editor/MenuActions/Selection/SelectEdgeLoop.cs") state(2)
-Script is not up to date after domain reload: guid(efd5cca1cb8dabd418d215e770d3fb01) path("Packages/com.unity.probuilder/Runtime/Core/VectorMask.cs") state(2)
-Script is not up to date after domain reload: guid(3f1ca63a91b17724bbd99c8fa67e0180) path("Packages/com.unity.probuilder/Editor/EditorCore/MaterialPalette.cs") state(2)
-Script is not up to date after domain reload: guid(cf31008f4dc1fb548a315685bb054730) path("Packages/com.unity.probuilder/Runtime/Core/SelectPathFaces.cs") state(2)
-Script is not up to date after domain reload: guid(9f21d9e5e308b409f9173967b37d19be) path("Packages/com.unity.probuilder/Runtime/Core/IntVec2.cs") state(2)
-Script is not up to date after domain reload: guid(ff4f787bd1deaee4d82db29948ed6099) path("Packages/com.unity.probuilder/Editor/EditorCore/BooleanEditor.cs") state(2)
-Script is not up to date after domain reload: guid(ffea9638e10c9644aab23c2652f86279) path("Packages/com.unity.probuilder/Editor/EditorCore/TextureScaleTool.cs") state(2)
-Script is not up to date after domain reload: guid(ffab696c539c4041848596918dd4590f) path("Packages/com.unity.probuilder/Editor/MenuActions/Object/MergeObjects.cs") state(2)
-Script is not up to date after domain reload: guid(afd663fb17a03f749915886536580b91) path("Packages/com.unity.probuilder/Editor/EditorCore/Model.cs") state(2)
-Script is not up to date after domain reload: guid(1fa9c1c880d9b724f978f610d18852e7) path("Packages/com.unity.probuilder/Editor/EditorCore/SmoothGroupEditor.cs") state(2)
-Script is not up to date after domain reload: guid(df1c6ba8c6074cd4872ff79d66cc49f5) path("Packages/com.unity.probuilder/Editor/MenuActions/Selection/SelectFaceLoop.cs") state(2)
-Script is not up to date after domain reload: guid(dfce99e9d622b416d8522fc504aa4459) path("Packages/com.unity.probuilder/Runtime/Core/FaceRebuildData.cs") state(2)
-Script is not up to date after domain reload: guid(df3a4cb75c674491b6a359529d7fbd82) path("Packages/com.unity.probuilder/Editor/MenuActions/Interaction/ToggleDragSelectionMode.cs") state(2)
-Script is not up to date after domain reload: guid(ffe60d522a0a4b0489a5bfe4bb6b4fb1) path("Packages/com.unity.probuilder/Editor/MenuActions/Selection/SelectSmoothingGroup.cs") state(2)
-Script is not up to date after domain reload: guid(ff8eab1edc549c8489031e8b952c1b56) path("Packages/com.unity.probuilder/Editor/EditorCore/EditorToolbarLoader.cs") state(2)
-Script is not up to date after domain reload: guid(2f90915a295ab524097b6e004b64d015) path("Packages/com.unity.probuilder/Editor/EditorCore/EditorEnum.cs") state(2)
-Script is not up to date after domain reload: guid(1f26c4d173d1ff0488349210afd77fa2) path("Packages/com.unity.probuilder/Editor/EditorCore/EditorToolsContexts.cs") state(2)
-Script is not up to date after domain reload: guid(6f435ddc17924dd18782195e161766ae) path("Packages/com.unity.probuilder/Editor/MenuActions/Selection/SelectHole.cs") state(2)
-Script is not up to date after domain reload: guid(5f130a448e6f0cc45bacc05a4653fc41) path("Packages/com.unity.probuilder/Runtime/Core/SelectionPickerRendererHDRP.cs") state(2)
-Script is not up to date after domain reload: guid(fe5e031b8d5fd9d43b054ae08c843652) path("Packages/com.unity.probuilder/External/Poly2Tri/Triangulation/Delaunay/Sweep/DTSweepDebugContext.cs") state(2)
-Script is not up to date after domain reload: guid(1fdc9faa599347a3b697e785ac4719b3) path("Packages/com.unity.probuilder/Editor/MenuActions/Geometry/ConformFaceNormals.cs") state(2)
 ========================================================================
 Worker process is ready to serve import requests
-Script is not up to date after domain reload: guid(af7cbb59029d2420c960fa64da335888) path("Packages/com.unity.probuilder/Runtime/Core/SimpleTuple.cs") state(2)
-Script is not up to date after domain reload: guid(9f685c26016f847298dc0af81e9322c3) path("Packages/com.unity.probuilder/Runtime/Shapes/Stairs.cs") state(2)
-Script is not up to date after domain reload: guid(eff25082b866e6d468d04fc8a3f22e71) path("Packages/com.unity.probuilder/Editor/EditorCore/MenuActionStyles.cs") state(2)
-Script is not up to date after domain reload: guid(efd5cca1cb8dabd418d215e770d3fb01) path("Packages/com.unity.probuilder/Runtime/Core/VectorMask.cs") state(2)
-Script is not up to date after domain reload: guid(cf31008f4dc1fb548a315685bb054730) path("Packages/com.unity.probuilder/Runtime/Core/SelectPathFaces.cs") state(2)
-Script is not up to date after domain reload: guid(ff4f787bd1deaee4d82db29948ed6099) path("Packages/com.unity.probuilder/Editor/EditorCore/BooleanEditor.cs") state(2)
-Script is not up to date after domain reload: guid(ffea9638e10c9644aab23c2652f86279) path("Packages/com.unity.probuilder/Editor/EditorCore/TextureScaleTool.cs") state(2)
-Script is not up to date after domain reload: guid(ffab696c539c4041848596918dd4590f) path("Packages/com.unity.probuilder/Editor/MenuActions/Object/MergeObjects.cs") state(2)
-Script is not up to date after domain reload: guid(afd663fb17a03f749915886536580b91) path("Packages/com.unity.probuilder/Editor/EditorCore/Model.cs") state(2)
-Script is not up to date after domain reload: guid(df1c6ba8c6074cd4872ff79d66cc49f5) path("Packages/com.unity.probuilder/Editor/MenuActions/Selection/SelectFaceLoop.cs") state(2)
-Script is not up to date after domain reload: guid(dfce99e9d622b416d8522fc504aa4459) path("Packages/com.unity.probuilder/Runtime/Core/FaceRebuildData.cs") state(2)
-Script is not up to date after domain reload: guid(df3a4cb75c674491b6a359529d7fbd82) path("Packages/com.unity.probuilder/Editor/MenuActions/Interaction/ToggleDragSelectionMode.cs") state(2)
-Script is not up to date after domain reload: guid(ffe60d522a0a4b0489a5bfe4bb6b4fb1) path("Packages/com.unity.probuilder/Editor/MenuActions/Selection/SelectSmoothingGroup.cs") state(2)
-Script is not up to date after domain reload: guid(ff8eab1edc549c8489031e8b952c1b56) path("Packages/com.unity.probuilder/Editor/EditorCore/EditorToolbarLoader.cs") state(2)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
-Refreshing native plugins compatible for Editor in 0.59 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.15 seconds
+Refreshing native plugins compatible for Editor in 1.95 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3719 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 28 unused Assets / (111.0 KB). Loaded Objects now: 4177.
-Memory consumption went from 128.0 MB to 127.9 MB.
-Total: 3.096400 ms (FindLiveObjects: 0.270300 ms CreateObjectMapping: 0.205100 ms MarkObjects: 2.526600 ms  DeleteObjects: 0.093500 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005928 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image E:\Unity\Unity Projects\Game Development\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image E:\Unity\Unity Projects\Game Development\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 1.00 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.068 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1068ms)
-		BeginReloadAssembly (154ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (9ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (47ms)
-		EndReloadAssembly (762ms)
-			LoadAssemblies (88ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (258ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (36ms)
-			SetupLoadedEditorAssemblies (330ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (22ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (72ms)
-				ProcessInitializeOnLoadAttributes (199ms)
-				ProcessInitializeOnLoadMethodAttributes (25ms)
-				AfterProcessingInitializeOnLoad (10ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.46 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3748 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 40 unused Assets / (2.0 MB). Loaded Objects now: 4196.
-Memory consumption went from 133.0 MB to 131.0 MB.
-Total: 3.375000 ms (FindLiveObjects: 0.238500 ms CreateObjectMapping: 0.148100 ms MarkObjects: 2.239600 ms  DeleteObjects: 0.748300 ms)
+Unloading 3752 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 26 unused Assets / (94.1 KB). Loaded Objects now: 4214.
+Memory consumption went from 133.7 MB to 133.6 MB.
+Total: 8.426000 ms (FindLiveObjects: 0.594500 ms CreateObjectMapping: 0.571000 ms MarkObjects: 6.875900 ms  DeleteObjects: 0.381500 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -262,7 +168,7 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 18301.040524 seconds.
-  path: Assets
-  artifactKey: Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets using Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79842766b460edbeab6a34051e857a80') in 0.054859 seconds 
+  Time since last request: 661379.617731 seconds.
+  path: Assets/ProBuilder Data/Default Material Palette.asset
+  artifactKey: Guid(912179fa3b26c784bb32bf31a35b0dbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProBuilder Data/Default Material Palette.asset using Guid(912179fa3b26c784bb32bf31a35b0dbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a44bc06b92dbae578b23c5c162c8f63f') in 0.096610 seconds 
