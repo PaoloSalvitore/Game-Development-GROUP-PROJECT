@@ -1,7 +1,7 @@
 using UnityEngine; //Connect to Unity Engine
 //Require a character controller for character movement
 [RequireComponent(typeof(CharacterController))]
-public class PlayerMovement : MonoBehaviour
+public class Player : MonoBehaviour
 {
     #region Variables
     [Header("Movement Variables")]
@@ -18,7 +18,11 @@ public class PlayerMovement : MonoBehaviour
     [Header("Component References")]
     [Tooltip("Attach the character controller of the player object. It may also be retrieved during start if you forget.")]
     [SerializeField] private CharacterController _charCon;
-
+    [Header("Player Variables")]
+    [Tooltip("Set the amount of health the player will have. Currently at 3 to coincide with the 3 hearts of the UI")]
+    public int playerHealth = 3;
+    [Tooltip("Set the amount of energy the player will have at start. 100 will allow for 4 energy balls as each costs 25")]
+    public float playerEnergy = 100f;
     //Variables for calculated gravity, movement and jump values
     private float _gravityAcceleration;
     private float _jumpSpeed;

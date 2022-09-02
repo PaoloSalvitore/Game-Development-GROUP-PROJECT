@@ -1,4 +1,4 @@
-using UnityEngine;
+using UnityEngine; //Connect to Unity Engine
 
 public class MouseLook : MonoBehaviour
 {
@@ -11,6 +11,7 @@ public class MouseLook : MonoBehaviour
     [Header("Component References")]
     [Tooltip("Drag the player object in here, or it will be retrieve on start")]
     [SerializeField] private GameObject _player;
+    [SerializeField] private Player _playerClass;
     //Private variables to store the values for vertical and horizontal rotation of the camera
     private float _verticalRotation;
     private float _horizontalRotation;
@@ -23,6 +24,11 @@ public class MouseLook : MonoBehaviour
         {
             _player = GameObject.Find("Player");
         }
+        //If we don't have the player class assigned, grab it from the player object and assign it
+        if (_playerClass == null)
+        {
+            _playerClass = _player.GetComponent<Player>();
+        }
         //Set the vertical and horizontal rotation values to the current x and y rotation of the object
         _verticalRotation = transform.localEulerAngles.x;
         _horizontalRotation = _player.transform.eulerAngles.y;
@@ -33,6 +39,12 @@ public class MouseLook : MonoBehaviour
     #region Movement
     private void Update()
     {
+        //If we click the mouse button and have enough energy we will expend some energy and spawn an attack orb
+        if (Input.GetMouseButtonDown(0) && _playerClass.playerEnergy >= 25f)
+        {
+            _playerClass.playerEnergy -= 25f;
+            Instantiate(Resources.Load("Sparks"), transform.position + transform.forward, transform.rotation);
+        }
         //If we press the escape key toggle the cursor visibility and lock mode on or off
         if (Input.GetKeyDown(KeyCode.Escape))
         {
