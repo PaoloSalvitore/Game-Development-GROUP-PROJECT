@@ -12,6 +12,14 @@ public class MouseLook : MonoBehaviour
     [Tooltip("Drag the player object in here, or it will be retrieve on start")]
     [SerializeField] private GameObject _player;
     [SerializeField] private Player _playerClass;
+    [SerializeField] public GameObject[] FullHealth;
+    [SerializeField] public GameObject[] LowHealth;
+    [SerializeField] public int _hpValue = 3;
+    public bool _hpChanged = false;
+    [SerializeField] public GameObject gameLost;
+    [SerializeField] public bool defeat = false;
+
+
     //Private variables to store the values for vertical and horizontal rotation of the camera
     private float _verticalRotation;
     private float _horizontalRotation;
@@ -39,11 +47,59 @@ public class MouseLook : MonoBehaviour
     #region Movement
     private void Update()
     {
+        //Lowers the player Health
+
+        if (_hpChanged)
+        {
+            if (_hpValue == 3)
+            {
+                for (int i = 0; i <= 2; i++)
+                {
+                    FullHealth[i].SetActive(true);
+                    LowHealth[i].SetActive(false);
+                }
+            }
+            if (_hpValue == 2)
+            {
+                FullHealth[0].SetActive(true);
+                FullHealth[1].SetActive(true);
+                FullHealth[2].SetActive(false);
+                LowHealth[0].SetActive(false);
+                LowHealth[1].SetActive(false);
+                LowHealth[2].SetActive(true);
+            }
+            if (_hpValue == 1)
+            {
+                FullHealth[0].SetActive(true);
+                FullHealth[1].SetActive(false);
+                FullHealth[2].SetActive(false);
+                LowHealth[0].SetActive(false);
+                LowHealth[1].SetActive(true);
+                LowHealth[2].SetActive(true);
+            }
+            if (_hpValue == 0)
+            {
+                for (int i = 0; i <= 2; i++)
+                {
+                    FullHealth[i].SetActive(false);
+                    LowHealth[i].SetActive(true);
+                }
+                playerDefeat();
+            }
+
+
+
+
+            _hpChanged = false;
+        }
+
         //If we click the mouse button and have enough energy we will expend some energy and spawn an attack orb
-        if (Input.GetMouseButtonDown(0) && _playerClass.playerEnergy >= 25f)
+        if (Input.GetMouseButtonDown(0) && _playerClass.playerEnergy >= 25f&&!defeat)
         {
             _playerClass.playerEnergy -= 25f;
             Instantiate(Resources.Load("Sparks"), transform.position + transform.forward, transform.rotation);
+            _hpValue--;
+            _hpChanged = true;
         }
         //If we press the escape key toggle the cursor visibility and lock mode on or off
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -90,4 +146,13 @@ public class MouseLook : MonoBehaviour
         }
     }
     #endregion
+
+
+    private void playerDefeat()
+    {
+        defeat = true;
+        gameLost.SetActive(true);
+        Time.timeScale = 0;
+        Cursor.lockState = CursorLockMode.None;
+    }
 }
